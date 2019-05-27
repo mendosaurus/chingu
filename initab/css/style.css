@@ -144,26 +144,32 @@ body {
   display: flex;
   height: 100vh;
   overflow: hidden;
-  /* width: 100%; */
 }
 
 .content-box {
-  font-family: "Inconsolata", monospace;
-  margin: 4rem 1.5rem 0;
-  font-size: 1.4rem;
-  border-color: #44475a !important;
+  font-family: 'Inconsolata',monospace;
+  margin: 35px 0;
+  border-left: 2px solid #44475a;
   padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.content-box:hover{
+  border-color: #50fa7b;
   cursor: pointer;
+  transition: all .5s ease-in;
 }
 
 .title {
-  color: #8be9fd !important;
-  padding: 3rem 1rem 1rem;
   text-align: center;
-  font-size: 1.5rem;
-  font-family: "Inconsolata", monospace;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: 'Inconsolata',monospace;
 }
-
 
 ::-webkit-scrollbar {
   display: none;
@@ -183,6 +189,10 @@ body {
 
 .gray {
   color: #6272a4 !important;
+}
+
+.light-blue {
+  color: #8be9fd;
 }
 
 /* side-menu */
@@ -311,6 +321,7 @@ body {
 /*Popular-section*/
 .popular-section {
   width: 30%;
+  padding: 0 1rem;
   overflow-y: auto;
 }
 
@@ -331,20 +342,20 @@ body {
 }
 
 .history-section {
-  height: 60%;
+  height: 50%;
+  overflow-y: auto;
+  border-bottom: #44475a solid 1px;
 }
 
 .js-history {
   margin-top: 40px;
-  font-size: 1.2rem;
   max-height: 60%;
-  overflow-y: auto;
-  border-bottom: #6272a4 solid 1px;
+  font-size: 1rem;
 }
 
 .js-history-box {
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 1.3rem;
   width: 100%; 
 }
 
@@ -363,7 +374,7 @@ body {
 
 .js-content:hover {
   color: #f1fa8c !important;
-  transition: 0.3s;
+  transition: all 0.5s ease-in;
   cursor: pointer;
 }
 
@@ -375,10 +386,7 @@ body {
 
 .GitHub-section {
   width: 30%;
-}
-
-.GitHub-title {
-  padding-bottom: 0.3rem;
+  padding: 0 1rem;
 }
 
 .time-section {
@@ -391,7 +399,7 @@ body {
 }
 
 .time {
-  font-size: 100px;
+  font-size: 9rem;
   font-weight: 400;
 }
 
@@ -418,13 +426,13 @@ body {
 .Github-tab {
   padding: 1rem;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
 .Github-tab:hover {
   color: #f1fa8c !important;
-  transition: all .2s ease-in;
+  transition: all .5s ease-in;
 }
 
 .Git-content {
